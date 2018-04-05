@@ -1,0 +1,24 @@
+Affiliationcodes:
+    type: entity
+    table: affiliationcodes
+    id:
+        affiliationcode:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            default: ''
+            id: true
+            column: affiliationCode
+            generator:
+                strategy: IDENTITY
+    fields:
+        affiliation:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            comment: ''
+            default: ''
+    lifecycleCallbacks: {  }

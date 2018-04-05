@@ -1,0 +1,59 @@
+Paymentsarchive:
+    type: entity
+    table: paymentsarchive
+    id:
+        year:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+        paymentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: paymentId
+    fields:
+        datereceived:
+            type: date
+            nullable: false
+            comment: ''
+            default: '0000-00-00'
+            column: dateReceived
+        amount:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+        paymenttype:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: paymentType
+        checknumber:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+            column: checkNumber
+        payor:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        registrationid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: registrationId
+    lifecycleCallbacks: {  }

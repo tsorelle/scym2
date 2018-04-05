@@ -1,0 +1,63 @@
+Feetypes:
+    type: entity
+    table: feetypes
+    id:
+        feetypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: feeTypeID
+            generator:
+                strategy: IDENTITY
+    fields:
+        feecode:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            default: ''
+            column: feeCode
+        feecatagoryid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: feeCatagoryId
+        description:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+        iscredit:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: isCredit
+        unitamount:
+            type: decimal
+            nullable: false
+            precision: 10
+            scale: 2
+            comment: ''
+            default: '0.00'
+            column: unitAmount
+        basis:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        canwaive:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '1'
+    lifecycleCallbacks: {  }

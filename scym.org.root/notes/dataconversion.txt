@@ -1,0 +1,24 @@
+persons:
+
+drop membershipstatus
+drop password
+workphone > phone2
+ymstatus > membershipTypeId
+birthYear > dateOfBirth, drop birthyear.
+drop ympersonid
+drop affiliationcode2
+
+add addedBy
+add updatedBy
+add organization
+
+ymstatus codes, convert to membershiptypes
+
+meetinginfo > meetings
+
+quarterlyMeetings > new
+convert meetings to innodb
+foreigh key  meetings.quarterlyMeetingId
+
+
+

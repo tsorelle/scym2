@@ -1,0 +1,166 @@
+Attenders:
+    type: entity
+    table: attenders
+    id:
+        attenderid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: attenderID
+            generator:
+                strategy: IDENTITY
+    fields:
+        registrationid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: registrationId
+        firstname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: firstName
+        lastname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: lastName
+        middlename:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: middleName
+        dateofbirth:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateOfBirth
+        affiliationid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: affiliationId
+        otheraffiliation:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: otherAffiliation
+        personid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: personID
+        firsttimer:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: firstTimer
+        teacher:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        financialaidrequested:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: financialAidRequested
+        guest:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        notes:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+        linens:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        specialneeds:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: specialNeeds
+        arrivaltime:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '41'
+            column: arrivalTime
+        departuretime:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '72'
+            column: departureTime
+        housing:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+        vegetarian:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        attended:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        generation:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+        gradelevel:
+            type: string
+            nullable: true
+            length: 2
+            fixed: true
+            comment: ''
+            column: gradeLevel
+        agegroup:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: ageGroup
+        feecredit:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: feeCredit
+        singleoccupant:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: singleOccupant
+    lifecycleCallbacks: {  }

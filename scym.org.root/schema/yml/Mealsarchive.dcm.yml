@@ -1,0 +1,39 @@
+Mealsarchive:
+    type: entity
+    table: mealsarchive
+    id:
+        year:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+        mealid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: mealID
+    fields:
+        attenderid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: attenderID
+        mealtime:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+            column: mealTime
+        vegetarian:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+    lifecycleCallbacks: {  }

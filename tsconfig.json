@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "include"  : [
+    "scym.org.root/assets/js/**/*"
+  ],
+  "exclude"   : [
+    "scym.org.root/assets/js/typings/**/*"
+  ]
+}

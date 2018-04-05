@@ -1,0 +1,27 @@
+Usergroups:
+    type: entity
+    table: usergroups
+    id:
+        usergroupid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: usergroupId
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        groupid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: groupId
+    lifecycleCallbacks: {  }

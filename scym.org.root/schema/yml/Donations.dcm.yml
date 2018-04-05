@@ -1,0 +1,40 @@
+Donations:
+    type: entity
+    table: donations
+    id:
+        donationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: donationId
+            generator:
+                strategy: IDENTITY
+    fields:
+        donationtypeid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: donationTypeId
+        registrationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: registrationId
+        amount:
+            type: decimal
+            nullable: true
+            precision: 12
+            scale: 2
+            comment: ''
+        note:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

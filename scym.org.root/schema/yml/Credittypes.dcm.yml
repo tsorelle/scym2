@@ -1,0 +1,22 @@
+Credittypes:
+    type: entity
+    table: credittypes
+    id:
+        credittypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: creditTypeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        credittype:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: creditType
+    lifecycleCallbacks: {  }

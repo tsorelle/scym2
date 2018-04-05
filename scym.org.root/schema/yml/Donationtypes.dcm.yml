@@ -1,0 +1,29 @@
+Donationtypes:
+    type: entity
+    table: donationtypes
+    id:
+        donationtypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: donationTypeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        donationtypecode:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+            column: donationTypeCode
+        description:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

@@ -1,0 +1,47 @@
+Charges:
+    type: entity
+    table: charges
+    id:
+        chargeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: chargeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        registrationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: registrationId
+        feetypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: feeTypeID
+        basis:
+            type: string
+            nullable: true
+            length: 60
+            fixed: false
+            comment: ''
+        amount:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+        notes:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

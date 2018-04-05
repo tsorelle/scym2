@@ -1,0 +1,21 @@
+Days:
+    type: entity
+    table: days
+    id:
+        daynumber:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        dayname:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

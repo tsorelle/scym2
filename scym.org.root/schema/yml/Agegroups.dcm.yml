@@ -1,0 +1,29 @@
+Agegroups:
+    type: entity
+    table: agegroups
+    id:
+        agegroupid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: ageGroupId
+            generator:
+                strategy: IDENTITY
+    fields:
+        groupname:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: groupName
+        cutoffage:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: cutoffAge
+    lifecycleCallbacks: {  }

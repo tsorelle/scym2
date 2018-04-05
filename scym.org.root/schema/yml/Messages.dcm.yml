@@ -1,0 +1,44 @@
+Messages:
+    type: entity
+    table: messages
+    id:
+        msgid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: msgId
+            generator:
+                strategy: IDENTITY
+    fields:
+        sender:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        location:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        received:
+            type: datetime
+            nullable: false
+            comment: ''
+            default: CURRENT_TIMESTAMP
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        message:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

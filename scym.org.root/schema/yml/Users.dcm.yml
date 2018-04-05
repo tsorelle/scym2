@@ -1,0 +1,93 @@
+Users:
+    type: entity
+    table: users
+    id:
+        userid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: userId
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+        password:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        firstname:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: firstName
+        middlename:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: middleName
+        lastname:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: lastName
+        addressid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: addressId
+        active:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+        createdon:
+            type: date
+            nullable: true
+            comment: ''
+            column: createdOn
+        createdby:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: createdBy
+        updatedon:
+            type: date
+            nullable: true
+            comment: ''
+            column: updatedOn
+        updatedby:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: updatedBy
+    lifecycleCallbacks: {  }

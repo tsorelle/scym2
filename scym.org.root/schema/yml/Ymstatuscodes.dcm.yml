@@ -1,0 +1,22 @@
+Ymstatuscodes:
+    type: entity
+    table: ymstatuscodes
+    id:
+        ymstatuscodeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: ymStatusCodeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        status:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

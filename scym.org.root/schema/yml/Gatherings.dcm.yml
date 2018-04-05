@@ -1,0 +1,34 @@
+Gatherings:
+    type: entity
+    table: gatherings
+    id:
+        gatheringid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: gatheringID
+            generator:
+                strategy: IDENTITY
+    fields:
+        gatheringname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: gatheringName
+        gatheringstartdate:
+            type: date
+            nullable: false
+            comment: ''
+            default: '0000-00-00'
+            column: gatheringStartDate
+        gatheringenddate:
+            type: date
+            nullable: true
+            comment: ''
+            column: gatheringEndDate
+    lifecycleCallbacks: {  }

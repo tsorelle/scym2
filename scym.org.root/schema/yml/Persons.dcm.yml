@@ -1,0 +1,151 @@
+Persons:
+    type: entity
+    table: persons
+    indexes:
+        PersonNames:
+            columns:
+                - lastName
+                - firstName
+    id:
+        personid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: personID
+            generator:
+                strategy: IDENTITY
+    fields:
+        firstname:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: firstName
+        lastname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            default: ''
+            column: lastName
+        middlename:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: middleName
+        addressid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: addressID
+        phone:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+        workphone:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+            column: workPhone
+        email:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        membershipstatus:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '1'
+            column: membershipStatus
+        birthyear:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: birthYear
+        username:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+        password:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+        notes:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            comment: ''
+        dateadded:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateAdded
+        dateupdated:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateUpdated
+        junior:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        active:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+        sortkey:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        affiliationcode:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: affiliationCode
+        ymstatuscode:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: ymStatusCode
+        ympersonid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: ymPersonId
+        affiliationcode2:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: affiliationCode2
+    lifecycleCallbacks: {  }

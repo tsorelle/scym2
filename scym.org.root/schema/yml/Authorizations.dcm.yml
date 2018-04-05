@@ -1,0 +1,22 @@
+Authorizations:
+    type: entity
+    table: authorizations
+    id:
+        username:
+            type: string
+            nullable: false
+            length: 40
+            fixed: false
+            comment: ''
+            default: ''
+            id: true
+        authcode:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            default: ''
+            id: true
+            column: authCode
+    lifecycleCallbacks: {  }

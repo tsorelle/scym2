@@ -1,0 +1,56 @@
+Calendar:
+    type: entity
+    table: calendar
+    id:
+        calendarid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: calendarId
+            generator:
+                strategy: IDENTITY
+    fields:
+        title:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            default: ''
+        bodytext:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+            column: bodyText
+        startdate:
+            type: date
+            nullable: false
+            comment: ''
+            default: '0000-00-00'
+            column: startDate
+        enddate:
+            type: date
+            nullable: true
+            comment: ''
+            column: endDate
+        postedby:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: postedBy
+        dateadded:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateAdded
+        dateupdated:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateUpdated
+    lifecycleCallbacks: {  }

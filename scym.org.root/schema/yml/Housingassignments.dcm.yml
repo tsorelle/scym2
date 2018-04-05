@@ -1,0 +1,54 @@
+Housingassignments:
+    type: entity
+    table: housingassignments
+    uniqueConstraints:
+        personDay:
+            columns:
+                - attenderId
+                - day
+    id:
+        housingassignmentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: housingAssignmentID
+            generator:
+                strategy: IDENTITY
+    fields:
+        attenderid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: attenderId
+        day:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+        housingtype:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: housingType
+        unit:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+        note:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+        confirmed:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+    lifecycleCallbacks: {  }

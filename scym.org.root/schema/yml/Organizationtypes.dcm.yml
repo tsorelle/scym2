@@ -1,0 +1,29 @@
+Organizationtypes:
+    type: entity
+    table: organizationtypes
+    id:
+        organizationtypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: organizationTypeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        organizationtypedescription:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+            column: organizationTypeDescription
+        organizationtypecode:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+            column: organizationTypeCode
+    lifecycleCallbacks: {  }

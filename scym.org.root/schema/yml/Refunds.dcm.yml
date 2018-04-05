@@ -1,0 +1,21 @@
+Refunds:
+    type: entity
+    table: refunds
+    id:
+        feetypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: feeTypeId
+            generator:
+                strategy: IDENTITY
+    fields:
+        amount:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+    lifecycleCallbacks: {  }

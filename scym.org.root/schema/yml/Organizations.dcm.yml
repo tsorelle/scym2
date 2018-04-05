@@ -1,0 +1,75 @@
+Organizations:
+    type: entity
+    table: organizations
+    id:
+        organizationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: organizationId
+            generator:
+                strategy: IDENTITY
+    fields:
+        organizationname:
+            type: string
+            nullable: false
+            length: 80
+            fixed: false
+            comment: ''
+            default: ''
+            column: organizationName
+        description:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+        phone:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+        weburl:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: webURL
+        notes:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+        addressid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: addressID
+        organizationtypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: organizationTypeId
+        organizationidcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: organizationIdCode
+    lifecycleCallbacks: {  }

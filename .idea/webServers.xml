@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7c3ead15-fc67-4e6e-9516-ea0fa6ec53a7" name="staging.scym.org" url="http://scym.austinquakers.org">
+        <fileTransfer host="austinquakers.org" port="21" rootFolder="/public_html/scym.root" username="austinqu" password="dfeddfcfdf9adfd8dfcddfcfdfeadfecdfc5dfd2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="393ad1cf-106a-4c7e-a7c3-7a104cf17635" name="production.scym.org" url="http://www.scym.org">
+        <fileTransfer host="scym.org" port="21" rootFolder="/public_html" username="austinqu" password="dfeddfcfdf9adfd8dfcddfcfdfeadfecdfc5dfd2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,46 @@
+Credits:
+    type: entity
+    table: credits
+    id:
+        creditid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: creditId
+            generator:
+                strategy: IDENTITY
+    fields:
+        registrationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: registrationId
+        description:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        amount:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+        notes:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        credittypeid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: creditTypeId
+    lifecycleCallbacks: {  }

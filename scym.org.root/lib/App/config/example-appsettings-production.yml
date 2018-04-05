@@ -1,0 +1,36 @@
+connections:
+  scym:
+    driver: pdo_mysql
+    user: austinqu_scym
+    password: W00lm@n
+    dbname: austinqu_scym
+  scym_drupal:
+    driver: pdo_mysql
+    user: austinqu_scym
+    password: W00lm@n
+    dbname: austinqu_scymdpl
+smtp:
+  server: localhost
+services:
+  argObject:
+    class: Tops\test\TDiTestClass
+  testObject:
+    class: Tops\test\TDiTestClass2
+    arguments: [@argObject]
+logging:
+  logs:
+    emergency:
+      - email
+      - errorlog
+    alert:
+      - email
+      - errorlog
+    critical: errorlog
+    error: errorlog
+    warning: errorlog
+    notice: errorlog
+    info: errorlog
+    debug: testlog
+  email:
+    sender:  Tops Admin <admin@2quakers.net>
+    recipient: Support <support@2quakers.net>

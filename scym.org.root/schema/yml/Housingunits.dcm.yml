@@ -1,0 +1,34 @@
+Housingunits:
+    type: entity
+    table: housingunits
+    id:
+        unitname:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            comment: ''
+            default: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        capacity:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+        housingtypecode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: housingTypeCode
+    lifecycleCallbacks: {  }

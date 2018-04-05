@@ -1,0 +1,136 @@
+Addresses:
+    type: entity
+    table: addresses
+    id:
+        addressid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: addressID
+            generator:
+                strategy: IDENTITY
+    fields:
+        addresstype:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '1'
+            column: addressType
+        addressname:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: addressName
+        address1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        address2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        city:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            comment: ''
+        state:
+            type: string
+            nullable: true
+            length: 2
+            fixed: true
+            comment: ''
+        postalcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: postalCode
+        country:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+        phone:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+        notes:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            comment: ''
+        dateadded:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateAdded
+        dateupdated:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateUpdated
+        listcontact:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: listContact
+        newsletter:
+            type: boolean
+            nullable: true
+            comment: ''
+        printlabel:
+            type: boolean
+            nullable: true
+            comment: ''
+        active:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+        sortkey:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        datasource:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            default: '0'
+        scymentityid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: scymEntityId
+        gender:
+            type: boolean
+            nullable: true
+            comment: ''
+    lifecycleCallbacks: {  }

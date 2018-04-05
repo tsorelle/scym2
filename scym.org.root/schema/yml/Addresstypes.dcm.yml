@@ -1,0 +1,30 @@
+Addresstypes:
+    type: entity
+    table: addresstypes
+    id:
+        addresstypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            id: true
+            column: addressTypeID
+            generator:
+                strategy: IDENTITY
+    fields:
+        addresstypecode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: addressTypeCode
+        addresstypedescription:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+            column: addressTypeDescription
+    lifecycleCallbacks: {  }

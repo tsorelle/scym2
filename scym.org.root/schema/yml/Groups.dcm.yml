@@ -1,0 +1,33 @@
+Groups:
+    type: entity
+    table: groups
+    id:
+        groupid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: groupId
+            generator:
+                strategy: IDENTITY
+    fields:
+        groupname:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: groupName
+        description:
+            type: string
+            nullable: true
+            length: 200
+            fixed: false
+            comment: ''
+        active:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+    lifecycleCallbacks: {  }

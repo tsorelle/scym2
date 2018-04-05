@@ -1,0 +1,58 @@
+Documents:
+    type: entity
+    table: documents
+    id:
+        documentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: documentID
+            generator:
+                strategy: IDENTITY
+    fields:
+        documenttypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: documentTypeID
+        filename:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            comment: ''
+            column: fileName
+        title:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+            comment: ''
+        filetype:
+            type: string
+            nullable: true
+            length: 4
+            fixed: false
+            comment: ''
+            column: fileType
+        keywords:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+        datepublished:
+            type: date
+            nullable: true
+            comment: ''
+            column: datePublished
+        dateadded:
+            type: date
+            nullable: true
+            comment: ''
+            column: dateAdded
+    lifecycleCallbacks: {  }

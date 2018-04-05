@@ -1,0 +1,193 @@
+Registrations:
+    type: entity
+    table: registrations
+    id:
+        registrationid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: registrationId
+            generator:
+                strategy: IDENTITY
+    fields:
+        registrationidcode:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: registrationIdCode
+        addressname:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: addressName
+        address1:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        address2:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        city:
+            type: string
+            nullable: true
+            length: 40
+            fixed: false
+            comment: ''
+        state:
+            type: string
+            nullable: true
+            length: 2
+            fixed: true
+            comment: ''
+        postalcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            column: postalCode
+        country:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+        phone:
+            type: string
+            nullable: true
+            length: 25
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        receiveddate:
+            type: date
+            nullable: false
+            comment: ''
+            default: '0000-00-00'
+            column: receivedDate
+        amountpaid:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+            column: amountPaid
+        gatheringid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: gatheringID
+        addressid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: addressID
+        notes:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+        feesreceiveddate:
+            type: date
+            nullable: true
+            comment: ''
+            column: feesReceivedDate
+        contactrequested:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: contactRequested
+        arrivaltime:
+            type: boolean
+            nullable: true
+            comment: ''
+            column: arrivalTime
+        departuretime:
+            type: boolean
+            nullable: true
+            comment: ''
+            column: departureTime
+        scymnotes:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+            column: scymNotes
+        cancelleddate:
+            type: date
+            nullable: true
+            comment: ''
+            column: cancelledDate
+        confirmeddate:
+            type: date
+            nullable: true
+            comment: ''
+            column: confirmedDate
+        active:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '1'
+        ymdonation:
+            type: decimal
+            nullable: true
+            precision: 12
+            scale: 2
+            comment: ''
+            column: YMDonation
+        simplemealdonation:
+            type: decimal
+            nullable: true
+            precision: 12
+            scale: 2
+            comment: ''
+            column: simpleMealDonation
+        financialaidrequested:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+            column: financialAidRequested
+        financialaidcontribution:
+            type: decimal
+            nullable: true
+            precision: 12
+            scale: 2
+            comment: ''
+            column: financialAidContribution
+        attended:
+            type: boolean
+            nullable: true
+            comment: ''
+            default: '0'
+        financialaidamount:
+            type: decimal
+            nullable: false
+            precision: 12
+            scale: 2
+            comment: ''
+            default: '0.00'
+            column: financialAidAmount
+    lifecycleCallbacks: {  }

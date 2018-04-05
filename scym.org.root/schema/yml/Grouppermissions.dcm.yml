@@ -1,0 +1,27 @@
+Grouppermissions:
+    type: entity
+    table: grouppermissions
+    id:
+        grouppermissionid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: groupPermissionId
+            generator:
+                strategy: IDENTITY
+    fields:
+        permissionid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: permissionId
+        groupid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: groupId
+    lifecycleCallbacks: {  }

@@ -1,0 +1,28 @@
+Documenttypes:
+    type: entity
+    table: documenttypes
+    id:
+        documenttypeid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: documentTypeID
+            generator:
+                strategy: IDENTITY
+    fields:
+        documenttypename:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: documentTypeName
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }

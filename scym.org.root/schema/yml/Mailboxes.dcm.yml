@@ -1,0 +1,39 @@
+Mailboxes:
+    type: entity
+    table: mailboxes
+    uniqueConstraints:
+        boxIndex:
+            columns:
+                - box
+    id:
+        boxid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: boxId
+            generator:
+                strategy: IDENTITY
+    fields:
+        box:
+            type: string
+            nullable: false
+            length: 30
+            fixed: false
+            comment: ''
+            default: ''
+        address:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        displaytext:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+            column: displayText
+    lifecycleCallbacks: {  }

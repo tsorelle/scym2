@@ -1,0 +1,53 @@
+Payments:
+    type: entity
+    table: payments
+    id:
+        paymentid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: paymentId
+            generator:
+                strategy: IDENTITY
+    fields:
+        datereceived:
+            type: date
+            nullable: false
+            comment: ''
+            default: '0000-00-00'
+            column: dateReceived
+        amount:
+            type: decimal
+            nullable: true
+            precision: 10
+            scale: 2
+            comment: ''
+        paymenttype:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: paymentType
+        checknumber:
+            type: string
+            nullable: true
+            length: 10
+            fixed: false
+            comment: ''
+            column: checkNumber
+        payor:
+            type: string
+            nullable: true
+            length: 80
+            fixed: false
+            comment: ''
+        registrationid:
+            type: integer
+            nullable: true
+            unsigned: false
+            comment: ''
+            column: registrationId
+    lifecycleCallbacks: {  }

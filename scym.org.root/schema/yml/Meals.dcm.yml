@@ -1,0 +1,33 @@
+Meals:
+    type: entity
+    table: meals
+    id:
+        mealid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: mealID
+            generator:
+                strategy: IDENTITY
+    fields:
+        attenderid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            default: '0'
+            column: attenderID
+        mealtime:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+            column: mealTime
+        vegetarian:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+    lifecycleCallbacks: {  }

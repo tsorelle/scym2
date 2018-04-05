@@ -1,0 +1,75 @@
+Meetinginfo:
+    type: entity
+    table: meetinginfo
+    id:
+        meetinginfoid:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: meetingInfoID
+            generator:
+                strategy: IDENTITY
+    fields:
+        meetingname:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+            column: meetingName
+        state:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+        area:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+        affiliationcode:
+            type: string
+            nullable: true
+            length: 20
+            fixed: false
+            comment: ''
+            default: ''
+            column: affiliationCode
+        worshiptimes:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+            column: worshipTimes
+        worshiplocation:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            comment: ''
+            column: worshipLocation
+        url:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+        detailtext:
+            type: text
+            nullable: true
+            length: null
+            fixed: false
+            comment: ''
+            column: detailText
+        note:
+            type: string
+            nullable: true
+            length: 128
+            fixed: false
+            comment: ''
+    lifecycleCallbacks: {  }
